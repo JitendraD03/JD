@@ -10,11 +10,11 @@ void display(int arr[], int n)
 }
 int insert_pos(int arr[], int n, int pos, int x)
 {
-    if (pos >= n)
+    if (pos >= n) // these two lines are for the initial condition so that loop can execute
         return n;
     if (pos < 0)
         return n;
-    for (int j = n - 1; j >= pos; j--)
+    for (int j = n - 1; j >= pos; j--) // code for right shift so that we can delete the element
     {
         arr[j + 1] = arr[j];
     }
