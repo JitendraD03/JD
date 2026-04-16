@@ -7,7 +7,7 @@ void display(int arr[],int n)
     }
     printf("\n");
 }
-void selection_sort(int arr[],int n)
+void selection_sort(int arr[],int n) // code for finding minimum element in the array
 {
     for(int i=0;i<n;i++)
     {
@@ -19,7 +19,7 @@ void selection_sort(int arr[],int n)
                 min=j;
             }
         }
-        int temp=arr[i];
+        int temp=arr[i]; // ab baki element ko minimum se swap kar do
         arr[i]=arr[min];
         arr[min]=temp;
     }
